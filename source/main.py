@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Depends, HTTPException, status, Response
-from .database import get_db, engine
+from database import get_db, engine
 from sqlalchemy.orm import Session
 from . import models, schemas, utils
 from .routers import post, user, auth
